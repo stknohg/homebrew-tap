@@ -2,6 +2,12 @@
 
 My Homebrew formulae repository.
 
+## Installation
+
+```bash
+brew install stknohg/tap/<name>
+```
+
 ## Homebrew
 
 |Repository|Formula|Description|
