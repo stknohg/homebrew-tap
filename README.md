@@ -8,8 +8,8 @@ My Homebrew formulae repository.
 brew install stknohg/tap/<name>
 ```
 
-## Homebrew
+## Formulae
 
-|Repository|Formula|Description|
-|----|:--:|----|
-|[ec2rdp](https://github.com/stknohg/ec2rdp)|[formula](./Formula/ec2rdp.rb)|Remote Desktop Utility for Amazon EC2.|
+|Name|Repository|Formula|Description|
+|----|----|:--:|----|
+|ec2rdp|[ec2rdp](https://github.com/stknohg/ec2rdp)|[ec2rdp.rb](./Formula/ec2rdp.rb)|Remote Desktop Utility for Amazon EC2.|
