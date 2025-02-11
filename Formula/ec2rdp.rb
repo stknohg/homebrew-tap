@@ -5,21 +5,21 @@
 class Ec2rdp < Formula
   desc "Remote Desktop Utility for Amazon EC2."
   homepage "https://github.com/stknohg/ec2rdp"
-  version "0.8.2"
+  version "0.8.3"
   license "MIT"
   depends_on :macos
 
-  on_intel do
-    url "https://github.com/stknohg/ec2rdp/releases/download/v0.8.2/ec2rdp-darwin-x64.tar.gz"
-    sha256 "68ba4c57b49ee44b44ab47887416be08aa1338cf69b4f4a31061ba09622ae1de"
+  if Hardware::CPU.intel?
+    url "https://github.com/stknohg/ec2rdp/releases/download/v0.8.3/ec2rdp-darwin-x64.tar.gz"
+    sha256 "38b5496e7dd6157fadab7695bbe666175c97a589075bb6f45db24884b6f3bcf2"
 
     def install
       bin.install "ec2rdp"
     end
   end
-  on_arm do
-    url "https://github.com/stknohg/ec2rdp/releases/download/v0.8.2/ec2rdp-darwin-arm64.tar.gz"
-    sha256 "0b98d003e31c5fc3e3220c9f4d8a7fa09ce535be68a3c61ff4bf8e326d6358ef"
+  if Hardware::CPU.arm?
+    url "https://github.com/stknohg/ec2rdp/releases/download/v0.8.3/ec2rdp-darwin-arm64.tar.gz"
+    sha256 "557019dd2ee4f264b450c81989189ec8ddb0188814b0e9ec217df9b190f91876"
 
     def install
       bin.install "ec2rdp"
